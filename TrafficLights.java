@@ -30,5 +30,8 @@ public class TrafficLights {
             default:
             System.out.println("El semáforo está dañado");
         }
+
+        trafficLights.close();
+
     }
 }
