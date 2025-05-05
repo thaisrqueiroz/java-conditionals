@@ -104,8 +104,6 @@ public class Quiz {
         } else {
             System.out.println("Buena suerte la próxima vez");
         }
-
         quiz.close();
-
     }
 }
