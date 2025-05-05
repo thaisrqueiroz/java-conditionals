@@ -105,8 +105,6 @@ public class Quiz {
             System.out.println("Buena suerte la próxima vez");
         }
 
-        System.out.println();
-
         quiz.close();
 
     }
