@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class TrafficLights {
     public static void main(String[] args) {
 
@@ -10,6 +12,24 @@ public class TrafficLights {
 
         //Cambia el valor de la variable, corre el programa y mira el resultado 
 
+        System.out.println("Escriba el color del semáforo:");
+
+        Scanner trafficLights = new Scanner(System.in);
+        String trafficColour = trafficLights.nextLine();
+
+        switch (trafficColour) {
+            case "verde", "green":
+                System.out.println("Puedes seguir");
+                break;
+            case "amarillo", "yellow":
+                System.out.println("Ten cuidado");
+                break;
+            case "rojo", "red":
+                System.out.println("¡¡¡Para!!!");
+                break;
+            default:
+            System.out.println("El semáforo está dañado");
+        }
+        trafficLights.close();
     }
-    
 }
